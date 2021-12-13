@@ -1,0 +1,300 @@
+.folder-main {
+    color: #fff;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo-container {
+    color: #fff;
+    font-weight: 700;
+    background-color: rgba(201, 69, 54, 1);
+    padding: 9px 10px;
+    height: 45px;
+}
+
+.logo {
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    padding: 3px 0;
+}
+
+.logo-bg {
+    display: inline-block;
+    /* padding: 5px; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    margin-right: 8px;
+    /* border-radius: 5px; */
+    /* border: 1px solid rgba(0, 0, 0, 0.25); */
+    vertical-align: middle;
+}
+
+.logo-bg img {
+    height: 20px;
+}
+
+.folder-switch {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.folder-switch:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.folder-switch svg {
+    margin-top: 4px;
+}
+
+.setting-icon {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.setting-icon:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.setting-icon svg {
+    margin-top: 4px;
+}
+
+.notebooks-container {
+    overflow-y: hidden;
+}
+
+#folder-list {
+    padding-top: 10px;
+    overflow-y: auto;
+    cursor: default;
+}
+
+.folder-item-container {
+    padding: 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+}
+
+.folder-item-container:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.folder-item-container.focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 1);
+}
+
+.folder-root:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 1);
+}
+
+.folder-root-icon {
+    padding-top: 6px;
+}
+
+.folder-item-container .bi-chevron-down {
+    float: right;
+}
+
+.folder-root-title-icon {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.folder-child {
+    cursor: pointer;
+}
+
+.folder-child.focus {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.folder-child:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.folder-child:hover .folder-item-action {
+    visibility: visible;
+}
+
+.folder-new-note-book {
+    position: relative;
+}
+
+.folder-new-note-close {
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.folder-child-extend-icon {
+    display: inline-block;
+    padding: 9px 0 0 5px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.visibility-hide {
+    visibility: hidden;
+}
+
+.folder-child-extend-icon:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.folder-item {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.6;
+    word-break: break-all;
+    user-select:none;
+}
+
+.folder-item-action {
+    padding: 8px 5px 0;
+    /* visibility: hidden; */
+    font-size: 12px;
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    height: 32px; */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.folder-action-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.folder-item-action-list {
+    color: #f0f0f0;
+    font-size: 14px;
+    padding: 5px 0;
+    width: 150px;
+}
+
+.folder-item-action-list svg {
+    margin-top: -3px;
+}
+
+.folder-item-action-item {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.folder-item-action-item:last-child {
+    margin-bottom: 0;
+}
+
+.folder-item-action-item svg {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.folder-item-action-item:hover {
+    background-color: #000;
+}
+
+.folder-child2 {
+    padding-left: 42px;
+}
+
+.folder-item-edit-container {
+    padding: 5px 21px;
+}
+
+.folder-item-edit {
+    background-color: #fff;
+    padding: 0 5px;
+    border-radius: 1px;
+}
+
+.folder-item-edit input {
+    border: 0;
+    width: 100%;
+    padding: 3px 0;
+}
+
+.folder-item-edit-save-button {
+    color: rgba(0, 0, 0, 0.5);
+    padding-top:5px;
+    font-size: 14px;
+}
+
+.folder-item-edit-save-button:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.bottom-bar {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    padding: 10 20px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bottom-bar-item {
+    display: inline-block;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.folder-selector-container {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.folder-selector-box {
+    min-height: 200px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.folder-selector-item  {
+    padding: 5px 0;
+    line-height: 1.6;
+    cursor: pointer;
+    border-bottom: 1px dotted #efefef;
+}
+
+.folder-selector-item.focus  {
+    background-color: #efefef;
+}
+
+.folder-selector-item:hover {
+    color: rgba(0, 0, 0, 0.9);
+    background-color: #f7f7f7;
+}
+
+.folder-selector-parent {
+    padding-left: 10px;
+}
+
+.folder-selector-child {
+    padding-left: 20px;
+}
+
+.folder-child .locked {
+    display: none;
+}
+
+.folder-child.is-locked .locked {
+    display: block;
+}
+
+.folder-child.is-locked .unlocked {
+    display: none;
+}
+
+.folder-child2.is-locked .locked {
+    display: block;
+}
+
+.folder-child2.is-locked .unlocked {
+    display: none;
+}

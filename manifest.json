@@ -1,0 +1,68 @@
+{
+    "manifest_version": 2,
+    "name": "Color Lolly - A writing management application based on markdown editor",
+    "short_name": "ColorLolly",
+    "version": "0.1.0",
+    "description":"A writing management application based on markdown editor",
+    "homepage_url": "https://www.colorlolly.com",
+    "author":"weiyi",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+    "background": {
+        "scripts": [
+            "scripts/lib/jquery-3.4.1.min.js",
+            "scripts/lib/aes.js",
+            "scripts/model.js",
+            "scripts/app.js",
+            "scripts/module/component/module.js",
+            "scripts/module/background/data.js",
+            "scripts/module/background/latest_images.js",
+            "scripts/module/images/module.js",
+            "scripts/module/background/module.js",
+            "scripts/run.js"
+        ]
+    },
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": [
+            "scripts/lib/jquery-3.4.1.min.js",
+            "scripts/app.js",
+            "scripts/model.js",
+            "scripts/module/data/module.js",
+            "scripts/module/component/module.js",
+            "scripts/module/component/view.js",
+            "scripts/module/editor/module.js",
+            "scripts/module/editor/event.js",
+            "scripts/module/editor/view.js",
+            "scripts/module/images/module.js",
+            "scripts/module/images/view.js",
+            "scripts/module/content/module.js",
+            "scripts/module/content/event.js",
+            "scripts/module/content/view.js",
+            "scripts/run.js"
+        ],
+        "css": [
+            "scripts/module/component/style.css",
+            "scripts/module/content/style.css",
+            "scripts/module/editor/style.css",
+            "scripts/module/images/style.css"
+        ]
+    }],
+    "browser_action": {
+        "default_title": "OneHeart",
+        "default_icon": "images/logo.png"
+    },
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "16": "images/logo.png",
+        "48": "images/logo2.png",
+        "128": "images/logo6.png"
+    }
+}

@@ -1,0 +1,234 @@
+code {
+    font-family: inherit;
+    background-color: rgba(214, 202, 165, 0.2);
+    padding: 0 2px;
+    border: 1px solid rgba(214, 202, 165, 0.5);
+    font-size: 16px;
+}
+
+.previewer-main {
+    width: 100%;
+    height: 100%;
+    line-height: 1.6;
+    background-color: #fff;
+    font-size: 16px;
+    border-right: 1px solid #efefef;
+}
+
+.previewer-main #toc-switch.focus {
+    color: rgba(201, 69, 54, 1);
+}
+
+.previewer-box {
+    overflow-y: auto;
+}
+
+.previewer-enity {
+    padding: 0 20px 80px;
+    /* overflow-y: auto; */
+}
+
+.preview-only .previewer-enity {
+    margin: 0 auto;
+    /* background-color: rgba(214, 202, 165, 0.1); */
+    /* background-color: #f7f7f7; */
+    min-height: 100%;
+}
+
+.action-middle {
+    text-align: center;
+    font-size: 12px;
+}
+
+.preview-action-preview-width-container {
+    display: inline-block;
+}
+
+.preview-width-item {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.preview-width-item:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.preview-width-item.disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.preview-action-preview-width-container svg {
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+.preview-action-preview-width-container span {
+    margin: 0 10px;
+}
+
+.previewer-main a {
+    color: rgba(201, 69, 54, 1);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.previewer-main hr {
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+.previewer-main h1, .previewer-main h2, .previewer-main h3, .previewer-main h4, .previewer-main h5, .previewer-main h6 {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.previewer-main h1 {
+    border-bottom: 1px solid #efefef;
+    padding: 10px 0;
+}
+
+.previewer-main h1 {
+    font-size: 2rem;
+}
+
+.previewer-main h2 {
+    font-size: 1.75rem;
+}
+
+.previewer-main h3 {
+    font-size: 1.5rem;
+}
+
+.previewer-main h4 {
+    font-size: 1.25rem;
+}
+
+.previewer-main h5 {
+    font-size: 1rem;
+}
+
+.previewer-main h6 {
+    font-size: 0.75rem;
+}
+
+.previewer-main img {
+    max-width: 100%;
+}
+
+.previewer-main pre {
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #efefef;
+    font-family: inherit;
+    margin-bottom: 1rem;
+}
+
+.previewer-main pre code {
+    font-family: inherit;
+    background-color: transparent;
+    border: 0;
+}
+
+.previewer-main dl, .previewer-main ol, .previewer-main ul {
+    margin-left: 25px;
+}
+
+.previewer-main p {
+    line-height: 1.6;
+}
+
+.previewer-main blockquote {
+    border-left: 5px solid #efefef;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+/* .previewer-main blockquote + p, 
+.previewer-main blockquote + h1, 
+.previewer-main blockquote + h2, 
+.previewer-main blockquote + h3, 
+.previewer-main blockquote + h4, 
+.previewer-main blockquote + h5, 
+.previewer-main blockquote + h6, 
+.previewer-main blockquote + ul, 
+.previewer-main blockquote + ol, 
+.previewer-main blockquote + pre, 
+.previewer-main blockquote + hr 
+{ 
+    margin-top: 1rem;
+} */
+
+.previewer-main blockquote + *:not(blockquote) {
+    margin-top: 1rem;
+} 
+
+.previewer-main blockquote p {
+    margin: 0;
+}
+
+.previewer-main table {
+    border: 1px solid #efefef;
+    margin-bottom: 1rem;
+}
+
+.previewer-main table th, .previewer-main table td {
+    padding: 5px;
+}
+
+.previewer-main table thead th {
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    font-weight: 500;
+}
+
+.previewer-main table thead th:last-child {
+    border-right: 0;
+}
+
+.previewer-main table tbody td {
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+}
+
+.previewer-main table tbody td:last-child {
+    border-right: 0;
+}
+
+.previewer-main table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.previewer-empty {
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.previewer-empty-text {
+    font-size: 16px;
+    display: block;
+}
+
+.previewer-html {
+    display: none;
+}
+
+.export-tips-container .gray {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.image-placeholder {
+    width: 100%;
+    /* border: 1px solid #efefef; */
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}

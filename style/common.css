@@ -1,0 +1,111 @@
+*{padding:0;margin:0;box-sizing: border-box;outline: none;}
+
+html, body {
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+ol, ul, p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.hide {
+    display: none;
+}
+
+.visibility-show {
+    visibility: visible;
+}
+
+.visibility-hide {
+    visibility: hidden;
+}
+
+/* text align */
+.align-right {
+    text-align: right;
+}
+
+/* color */
+.color-red {color: #ff0000;}
+
+/* flex */
+.display-flex {display: flex;}
+.display-flex-column{display: flex;flex-direction: column;}
+.display-flex-row{display: flex;flex-direction: row;}
+.display-flex-auto{flex: 1;}
+
+/* button */
+button {outline: none;}
+.btn, .xiezer-btn{border:0;cursor:pointer;border-radius: 3px;width: 100%;height: 100%;padding: 0;}
+.btn-primary, .xiezer-btn-primary{background-color:rgba(201, 69, 54, 1);border-color:#000;color:#fff;}
+.btn-primary:hover, .xiezer-btn-primary:hover{background-color:rgba(201, 69, 54, 0.9);}
+.btn-default, .xiezer-btn-default{background-color:#eee;border-color:#eee;color:#222;}
+.btn-default:hover, .xiezer-btn-default:hover{background-color:#ddd;}
+
+/* form input */
+.form-liner {
+    margin-bottom: 10px;
+}
+
+.form-action-liner {
+    height: 30px;
+}
+
+.form-action-liner button {
+    margin-bottom: 10px;
+}
+
+.form-action-liner button:last-child {
+    margin-bottom: 0;
+}
+
+.form-label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    color: #666;
+}
+
+.form-control.error {
+    border: 1px solid rgba(201, 69, 54, 1);
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {width:5px;height:5px;}
+/* 滚动槽 */
+::-webkit-scrollbar-track {box-shadow:rgba(0,0,0,0.3);border-radius:0;}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {border-radius:0;background:rgba(0, 0, 0, 0.1);box-shadow:rgba(0,0,0,0.2);}
+::-webkit-scrollbar-thumb:window-inactive {background:rgba(0,0,0,0.2);}
+
+.loading svg {
+    animation: loading 800ms infinite linear;
+}
+
+@keyframes loading {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

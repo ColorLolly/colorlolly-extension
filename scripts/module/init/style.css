@@ -1,0 +1,158 @@
+
+.main-container {
+    height: 100%;
+}
+
+.prepare-container {
+    width: 100%;
+    height: 100%;
+}
+
+.prepare-main {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    transform: translate(-50%, -100%);
+}
+
+.prepare-logo {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.prepare-content {
+    padding: 20px 0;
+}
+
+.prepare-icon {
+    margin-right: 10px;
+}
+
+.prepare-error {
+    color: rgba(201, 69, 54, 1);
+}
+
+.folder-container {
+    height: 100%;
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.notes-container {
+    width: 250px;
+    height: 100%;
+}
+
+.viewpoint-container {
+    overflow: hidden;
+}
+
+.viewpoint {
+    height: 100%;
+    overflow: hidden;
+}
+
+.editor-previewer-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.editor-column {
+    height: 100%;
+    overflow: hidden;
+}
+
+.preview-container {
+    overflow: hidden;
+    /* min-width: 320px; */
+}
+
+.toc-container {
+    width: 200px;
+    color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.toc-container .header {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+.toc-content {
+    padding: 20px 10px;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 13px;
+}
+
+.toc {
+    padding: 5px 10px;
+    line-height: 1.6;
+    cursor: pointer;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+    word-break: break-word;
+}
+
+.toc:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.toc-icon {
+    margin-right: 5px;
+}
+
+.toc-H2 {
+    padding-left: 20px;
+}
+
+.toc-H3 {
+    padding-left: 30px;
+}
+
+.toc-H4 {
+    padding-left: 40px;
+}
+
+.toc-H5 {
+    padding-left: 50px;
+}
+
+.toc-H6 {
+    padding-left: 60px;
+}
+
+.folder-mini {
+    position: absolute;
+    left: 70px;
+    top: 0;
+    background: rgba(201, 69, 54, 1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    padding: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    animation: mini-show 800ms;
+}
+
+.folder-mini:hover {
+    background: rgba(201, 69, 54, 1);
+}
+
+.folder-mini svg {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+@keyframes mini-show {
+    from {top: -36px}
+    to {top: 0}
+}

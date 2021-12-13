@@ -1,0 +1,220 @@
+.notes-main {
+    height: 100%;
+    background-color: rgba(214, 202, 165, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.notes-header {
+    padding: 14px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.notes-header-right {
+    text-align: right;
+}
+
+.notes-header:hover {
+    /* color: rgba(255, 255, 255, 1); */
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.notes-header svg {
+    cursor: pointer;
+}
+
+.notes-header-item {
+    display: inline-block;
+}
+
+.notes-header-right .notes-header-item {
+    margin-left: 10px;
+}
+
+.notes-header-item.focus {
+    color: rgba(201, 69, 54, 0.9);
+}
+
+.notes-search-container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.notes-search-container input {
+    width: 100%;
+    border: 0;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+.notes-items {
+    overflow: hidden;
+    height: 100%;
+}
+
+.notes-items .loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.notes-items-container {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.notes-edit-actions {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(214, 202, 165, 0.2);
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.notes-edit-action-delete {
+    color: rgba(201, 69, 54, 0.2);
+}
+
+.notes-edit-actions.is-selected .notes-edit-action-delete {
+    color: rgba(201, 69, 54, 0.9);
+}
+
+.notes-edit-actions.is-selected {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.notes-edit-action-item {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.notes-edit-actions-right {
+    text-align: right;
+}
+
+.notes-item {
+    padding: 10px;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    word-break:break-all;
+    user-select:none;
+}
+
+.notes-item.focus {
+    background-color: rgba(214, 202, 165, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.notes-item:hover {
+    background-color: rgba(214, 202, 165, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.notes-name {
+    font-size: 14px;
+}
+
+.notes-edit-line, .notes-checkbox {
+    display: none;
+}
+
+.notes-edit-mode .notes-checkbox {
+    display: block;
+}
+
+.notes-edit-mode .notes-edit-line {
+    display: flex;
+}
+
+.notes-edit-selected .notes-checkbox-default {
+    display: none;
+}
+
+.notes-edit-selected .notes-checkbox-checked {
+    display: block;
+}
+
+.notes-checkbox {
+    padding: 5px 5px 0 0;
+}
+
+.notes-checkbox-default {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.notes-checkbox-checked {
+    color: rgba(201, 69, 54, 0.9);
+    display: none;
+}
+
+.notes-item:hover .notes-bottom-action {
+    visibility: visible;
+}
+
+.notes-bottom {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+}
+
+.notes-bottom-action-item {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.notes-bottom-action svg {
+    margin-top: 3px;
+}
+
+.notes-bottom-action:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.notes-empty {
+    color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+.notes-nothing-icon {
+    font-size: 28px;
+}
+
+.notes-bottom-bar {
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color:rgba(214, 202, 165, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.notes-move-to-notebook-action .action-button {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.notes-item .locked {
+    display: none;
+}
+
+.notes-item .unlocked {
+    display: inline-block;
+}
+
+.notes-item.is-locked .locked {
+    display: inline-block;
+}
+
+.notes-item.is-locked .unlocked {
+    display: none;
+}
+
+.notes-item.is-locked .visibility-hide {
+    visibility: visible;
+}
+
+.isAESEncrypt {
+    color: #EC7063;
+}
